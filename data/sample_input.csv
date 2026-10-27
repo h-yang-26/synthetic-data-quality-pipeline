@@ -1,0 +1,61 @@
+record_id,category,item_name,quantity,received_date
+EQ-0001,valve,Relief valve  ,46,2024-01-12
+,mtr,Servo motor,132,2024-05-24
+EQ-0003,VALVE,Check valve,117,2024-02-30
+EQ-0004,electric motor,Drive motor,N/A,2024-08-17
+EQ-0005,SENSOR,Temperature probe ,195,2024-11-10
+EQ-0006,filter,Inlet filter ,23,2024-06-07
+EQ-0007,pump,Booster pump,183,2024-11-13
+EQ-0008,Pressure Unit,Servo motor ,156,2024-07-12
+EQ-0009,flt,Air filter  ,62,2024-01-22
+ EQ-0005,VALVE,Ball valve  ,154,2024-02-16
+EQ-0011,centrifugal pump,Transfer pump ,12.5,2024-03-14
+EQ-0012,motor,Fan motor,45,2024-05-03
+ EQ-0001,  pmp ,Booster pump,182,2024-11-09
+EQ-0014,  MOTOR ,Servo motor ,0,2024-10-13
+EQ-0015,vlv,Check valve ,146,2024-09-02
+EQ-0016,vlv,Relief valve,39,2024-06-12
+EQ-0017,pmp,Booster pump  ,-4,2024-01-19
+EQ-0018,valve,Relief valve,98,2024-03-19
+EQ-0019,pmp,Transfer pump  ,92,2024-06-03
+,valve,Ball valve,194,2024-07-30
+EQ-0021,PUMP,Booster pump  ,32,2024-12-16
+EQ-0022,filter element,Inlet filter,179,2024-03-30
+EQ-0023,PUMP,Booster pump  ,41,2024-09-18
+EQ-0024,electric motor,Drive motor  ,,2024-06-16
+EQ-0025,VALVE,Ball valve  ,177,2024-11-16
+EQ-0026,electric motor,Fan motor  ,131,2024-01-03
+EQ-0027,gizmo,Ball valve,22,2024-07-20
+EQ-0028,gizmo,Level sensor ,182,2024-11-04
+EQ-0029,pmp,Booster pump,149,2024-07-20
+EQ-0030,pmp,Dosing pump ,167,2024-07-31
+EQ-0031,flt,Air filter  ,180,2024-03-17
+EQ-0032,electric motor,Fan motor ,31,2024-12-05
+EQ-0033,valve,Ball valve  ,67,2024-12-05
+EQ-0034,valve,Relief valve,175,2024-11-09
+EQ-0035,MOTOR,Servo motor,5,2024-03-11
+EQ-0036,motor,Fan motor ,197,2024-07-14
+EQ-0037,  gate valve ,Relief valve,22,2024-06-07
+EQ-0038,temp sensor,Flow sensor ,51,2024-09-15
+EQ-0039,filter,Air filter  ,73,2024-01-26
+EQ-0040,temp sensor,Temperature probe,62,2024-05-29
+EQ-0041,pmp,Dosing pump  ,181,2024-08-12
+EQ-0042,Pressure Unit,Fan motor ,131,2024-06-18
+EQ-0043,pmp,Dosing pump,17,03/04/2024
+EQ-0044,,Temperature probe,40,2024-01-09
+EQ-0045,Pressure Unit,Fan motor ,39,2024-09-11
+EQ-0046,  centrifugal pump ,Dosing pump  ,22,03/04/2024
+EQ-0047,widget,Inlet filter  ,92,2024-10-19
+EQ-0048,valve,  ,101,2024-10-30
+EQ-0049,pump,Transfer pump,128,2024-10-06
+EQ-0050,  PUMP ,Transfer pump,64,2024-07-16
+EQ-0051,filter element,Inlet filter ,109,2024-05-31
+EQ-0052,motor,Servo motor  ,0,2024-05-18
+EQ-0053,filter element,Air filter ,150,
+EQ-0054,temp sensor,Level sensor ,136,2024-05-27
+EQ-0055,FILTER,Inlet filter ,113,2024-01-10
+EQ-0056,  temp sensor ,Flow sensor,66,2024-10-04
+EQ-0057,motor,Drive motor,0,2024-12-30
+EQ-0058,motor,Servo motor  ,40,2024-01-08
+EQ-0059,filter element,Inlet filter  ,,2024-03-02
+EQ-0060,SENSOR,Temperature probe,6,2024-04-23

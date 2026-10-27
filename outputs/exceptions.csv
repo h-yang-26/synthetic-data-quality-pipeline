@@ -1,0 +1,24 @@
+source_row_number,raw_record_id,raw_category,raw_item_name,raw_quantity,raw_received_date,error_codes,error_messages
+1,EQ-0001,valve,Relief valve  ,46,2024-01-12,DUPLICATE_ID,record_id 'EQ-0001' appears on more than one row
+2,,mtr,Servo motor,132,2024-05-24,MISSING_ID,record_id is blank
+3,EQ-0003,VALVE,Check valve,117,2024-02-30,INVALID_DATE,received_date '2024-02-30' is not a real calendar date
+4,EQ-0004,electric motor,Drive motor,N/A,2024-08-17,INVALID_QUANTITY,quantity 'N/A' is not a nonnegative whole number
+5,EQ-0005,SENSOR,Temperature probe ,195,2024-11-10,DUPLICATE_ID,record_id 'EQ-0005' appears on more than one row
+8,EQ-0008,Pressure Unit,Servo motor ,156,2024-07-12,AMBIGUOUS_CATEGORY,"category 'Pressure Unit' maps to several targets: PUMP, SENSOR"
+10, EQ-0005,VALVE,Ball valve  ,154,2024-02-16,DUPLICATE_ID,record_id 'EQ-0005' appears on more than one row
+11,EQ-0011,centrifugal pump,Transfer pump ,12.5,2024-03-14,INVALID_QUANTITY,quantity '12.5' is not a nonnegative whole number
+13, EQ-0001,  pmp ,Booster pump,182,2024-11-09,DUPLICATE_ID,record_id 'EQ-0001' appears on more than one row
+17,EQ-0017,pmp,Booster pump  ,-4,2024-01-19,INVALID_QUANTITY,quantity '-4' is not a nonnegative whole number
+20,,valve,Ball valve,194,2024-07-30,MISSING_ID,record_id is blank
+24,EQ-0024,electric motor,Drive motor  ,,2024-06-16,MISSING_QUANTITY,quantity is blank
+27,EQ-0027,gizmo,Ball valve,22,2024-07-20,UNKNOWN_CATEGORY,category 'gizmo' has no mapping
+28,EQ-0028,gizmo,Level sensor ,182,2024-11-04,UNKNOWN_CATEGORY,category 'gizmo' has no mapping
+42,EQ-0042,Pressure Unit,Fan motor ,131,2024-06-18,AMBIGUOUS_CATEGORY,"category 'Pressure Unit' maps to several targets: PUMP, SENSOR"
+43,EQ-0043,pmp,Dosing pump,17,03/04/2024,INVALID_DATE,received_date '03/04/2024' is not YYYY-MM-DD (other formats are not guessed)
+44,EQ-0044,,Temperature probe,40,2024-01-09,MISSING_CATEGORY,category is blank
+45,EQ-0045,Pressure Unit,Fan motor ,39,2024-09-11,AMBIGUOUS_CATEGORY,"category 'Pressure Unit' maps to several targets: PUMP, SENSOR"
+46,EQ-0046,  centrifugal pump ,Dosing pump  ,22,03/04/2024,INVALID_DATE,received_date '03/04/2024' is not YYYY-MM-DD (other formats are not guessed)
+47,EQ-0047,widget,Inlet filter  ,92,2024-10-19,UNKNOWN_CATEGORY,category 'widget' has no mapping
+48,EQ-0048,valve,  ,101,2024-10-30,MISSING_ITEM_NAME,item_name is blank
+53,EQ-0053,filter element,Air filter ,150,,MISSING_DATE,received_date is blank
+59,EQ-0059,filter element,Inlet filter  ,,2024-03-02,MISSING_QUANTITY,quantity is blank

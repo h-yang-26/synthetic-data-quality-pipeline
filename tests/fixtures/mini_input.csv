@@ -1,0 +1,13 @@
+record_id,category,item_name,quantity,received_date
+A-1, pump ,Pump A,5,2024-03-01
+A-2,pmp, Pump  B ,0, 2024-03-02
+A-3,valve,Valve C,,2024-03-03
+,valve,Valve D,1,2024-03-04
+A-5,vlv,Valve E,2,2024-03-05
+ A-5 ,vlv,Valve F,3,2024-03-06
+A-7,gizmo,Thing,1,2024-03-07
+A-8,pressure unit,Unit,1,2024-03-08
+A-9,sensor,Sensor G,2.5,2024-03-09
+A-10,sensor,Sensor H,4,04/03/2024
+A-11,motor,Motor I,7,2024-03-11
+A-12,MOTOR ,Motor J,-1,

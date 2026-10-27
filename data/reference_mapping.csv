@@ -1,0 +1,12 @@
+alias,product_category
+flt,FILTER
+filter element,FILTER
+mtr,MOTOR
+electric motor,MOTOR
+pmp,PUMP
+centrifugal pump,PUMP
+temp sensor,SENSOR
+vlv,VALVE
+gate valve,VALVE
+pressure unit,PUMP
+pressure unit,SENSOR
