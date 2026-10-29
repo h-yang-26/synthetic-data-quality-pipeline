@@ -17,7 +17,7 @@ Everything here is invented: the generator, the data, the category names and the
 
 ## Quick start (Windows PowerShell)
 
-Requires Python 3.11+ (developed and tested on Python 3.13.15, Windows 11; also tested on Linux, see below).
+Requires Python 3.11+ (developed and tested on Python 3.13.15, Windows 11; also tested on Ubuntu 24.04 with Python 3.13.18, see below).
 
 ```powershell
 py -m venv .venv
@@ -37,7 +37,7 @@ python3 -m venv .venv
 .venv/bin/python -m pytest
 ```
 
-Tested by an agent on Ubuntu 24.04 with Python 3.13.18 (2026-10-29): all 21 tests pass, and `demo` reproduces the committed `data/` and `outputs/` files byte for byte. macOS uses the same commands but has not been tested.
+Tested by an agent on Ubuntu 24.04 with Python 3.13.18 (2026-10-29): all 21 tests pass, and `demo` reproduces the committed `data/` and `outputs/` files byte for byte. The same commands should work on macOS, but it has not been tested.
 
 Exit codes: **0** = processing completed (row exceptions are normal, reviewable output); **2** = fatal file/configuration error (missing file, missing or duplicate input columns, invalid mapping file: wrong header, empty alias, a row without exactly two fields, or a target that is not a permitted category). Input/configuration validation finishes before any output is written. An output I/O failure can leave partial files; correct the destination and rerun all outputs before using them. Each successful run **replaces** `cleaned_records.csv`, `exceptions.csv` and `summary.json`.
 
