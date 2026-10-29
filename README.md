@@ -1,12 +1,23 @@
 # Synthetic Data Quality Pipeline
 
+**Cleans what it safely can and hands everything else to a person, with the reason attached.**
+
+[Read the case study](https://h-yang-26.github.io/projects/synthetic-data-quality-pipeline/) · [How this was built](#how-this-was-built) · [Portfolio](https://h-yang-26.github.io/)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/before-after-dark.svg">
+  <img src="docs/before-after.svg" alt="Before and after. Before: rows from the fictional sample input, where one has a blank ID, one has the date 2024-02-30, one says N/A for quantity, one has the category “Pressure Unit” and one repeats another row’s ID. After: clean records with standard categories, and an exceptions file holding rows for a person with their reasons." width="100%">
+</picture>
+
+*Real rows from this project’s fictional sample data. Figure from the portfolio site, drawn from `data/sample_input.csv` and `outputs/`.*
+
 A small Python pipeline that migrates inconsistent records from a **fictional** equipment-inventory CSV into a clean canonical CSV. Rows that are ambiguous or invalid are **not repaired by guessing**; they go to a separate exceptions file for human review, with their source row number, raw values and error codes.
 
 Everything here is invented: the generator, the data, the category names and the alias table. It describes this demo only, not any production system.
 
 ## Quick start (Windows PowerShell)
 
-Requires Python 3.11+ (developed and tested on Python 3.13.15, Windows 11).
+Requires Python 3.11+ (developed and tested on Python 3.13.15, Windows 11; also tested on Linux, see below).
 
 ```powershell
 py -m venv .venv
@@ -16,6 +27,17 @@ py -m venv .venv
 ```
 
 `demo` regenerates the fictional input (`data/sample_input.csv`, seed 42) and mapping (`data/reference_mapping.csv`), then writes `outputs/`. Use `generate` or `run` separately, e.g. `python -m dq_pipeline run --input my.csv --mapping my_map.csv --output-dir out`.
+
+### macOS / Linux
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m dq_pipeline demo
+.venv/bin/python -m pytest
+```
+
+Tested by an agent on Ubuntu 24.04 with Python 3.13.18 (2026-10-29): all 21 tests pass, and `demo` reproduces the committed `data/` and `outputs/` files byte for byte. macOS uses the same commands but has not been tested.
 
 Exit codes: **0** = processing completed (row exceptions are normal, reviewable output); **2** = fatal file/configuration error (missing file, missing or duplicate input columns, invalid mapping file: wrong header, empty alias, a row without exactly two fields, or a target that is not a permitted category). Input/configuration validation finishes before any output is written. An output I/O failure can leave partial files; correct the destination and rerun all outputs before using them. Each successful run **replaces** `cleaned_records.csv`, `exceptions.csv` and `summary.json`.
 
@@ -80,7 +102,11 @@ The test comparing the generated sample to the committed `data/` files assumes t
 
 ## Limitations
 
-Toy scale (60 rows), single-file, in-memory; one invented policy set; no fuzzy matching, UI, database or review workflow. Tested on Windows 11 / Python 3.13 only.
+Toy scale (60 rows), single-file, in-memory; one invented policy set; no fuzzy matching, UI, database or review workflow. Tested on Windows 11 and Ubuntu 24.04 with Python 3.13; not tested on macOS.
+
+## How this was built
+
+All data in this project is fictional, and the results say nothing about my employer’s systems. The project was built independently of my employer: AI tools did the implementation under my direction, and I approved the results. [How these were built](https://h-yang-26.github.io/how-these-were-built/) on the portfolio site explains who decided what and how the results were checked.
 
 ## Attribution
 
