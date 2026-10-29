@@ -37,7 +37,7 @@ python3 -m venv .venv
 .venv/bin/python -m pytest
 ```
 
-Tested by an agent on Ubuntu 24.04 with Python 3.13.18 (2026-10-29): all 21 tests pass, and `demo` reproduces the committed `data/` and `outputs/` files byte for byte. The same commands should work on macOS, but it has not been tested.
+Tested by Claude on Ubuntu 24.04 with Python 3.13.18 (2026-10-29): all 21 tests pass, and `demo` reproduces the committed `data/` and `outputs/` files byte for byte. The same commands should work on macOS, but it has not been tested.
 
 Exit codes: **0** = processing completed (row exceptions are normal, reviewable output); **2** = fatal file/configuration error (missing file, missing or duplicate input columns, invalid mapping file: wrong header, empty alias, a row without exactly two fields, or a target that is not a permitted category). Input/configuration validation finishes before any output is written. An output I/O failure can leave partial files; correct the destination and rerun all outputs before using them. Each successful run **replaces** `cleaned_records.csv`, `exceptions.csv` and `summary.json`.
 
@@ -106,7 +106,7 @@ Toy scale (60 rows), single-file, in-memory; one invented policy set; no fuzzy m
 
 ## How this was built
 
-All data in this project is fictional, and the results say nothing about my employer’s systems. The project was built independently of my employer: AI tools did the implementation under my direction, and I approved the results. [How these were built](https://h-yang-26.github.io/how-these-were-built/) on the portfolio site explains who decided what and how the results were checked.
+All data in this project is fictional, and the results say nothing about my employer’s systems. The project was built independently of my employer: ChatGPT and Claude helped with design and planning, Codex and Claude Code did the technical work under my direction, and I made the judgment calls and approved the results. [How these were built](https://h-yang-26.github.io/how-these-were-built/) on the portfolio site explains who decided what and how the results were checked.
 
 ## Attribution
 
